@@ -11,7 +11,7 @@ html {
 
 body {
   z-index: 1;
-  background-image: url(../img/bg-1.jpg);
+  background-image: url(../img/bg-2.jpg);
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -25,6 +25,31 @@ body {
 
 .container {
   border: 1px solid red;
+  width: 90vw;
+  max-width: 90rem;
+}
+.container h2 {
+  font-size: 2.1rem;
+  color: #ffffff;
+}
+.container input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  font-size: 2.1rem;
+}
+.container input::placeholder {
+  font-weight: 600;
+}
+.container .btn {
+  padding: 1rem 3rem;
+  background-color: #ffffff;
+  color: #555555;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
