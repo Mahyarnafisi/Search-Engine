@@ -39,12 +39,14 @@ a {
   justify-content: center;
   flex-direction: column;
   gap: 4rem;
-  transform: translateY(-6rem);
+  transform: translateY(-12rem);
   h2 {
     font-size: 5.1rem;
     font-weight: 100;
     align-self: center;
     color: #ffffff;
+    line-height: 0.8;
+    letter-spacing: -2px;
     // transform: translateY(-12rem);
   }
   input {
