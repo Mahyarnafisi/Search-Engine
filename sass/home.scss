@@ -22,6 +22,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 
 a {
@@ -38,16 +39,23 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 4rem;
+  // gap: 4rem;
   transform: translateY(-12rem);
   h2 {
-    font-size: 5.1rem;
+    font-size: 5.6rem;
     font-weight: 100;
     align-self: center;
     color: #ffffff;
     line-height: 0.8;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
     // transform: translateY(-12rem);
+    align-self: flex-start;
+  }
+  span {
+    font-size: 1.6rem;
+    letter-spacing: 0;
+    color: #ffffff;
+    align-self: flex-start;
   }
   input {
     display: flex;
@@ -56,6 +64,8 @@ a {
     height: 7rem;
     border-radius: 1.5rem;
     outline: none;
+    margin-bottom: 6rem;
+    margin-top: 2rem;
     border: none;
     font-size: 2.1rem;
     box-shadow: 0 1rem 5rem #00000035;
@@ -80,7 +90,7 @@ a {
   }
   .btn {
     cursor: pointer;
-    padding: 1.5rem 0;
+    padding: 1.2rem 0;
     width: 20rem;
     display: flex;
     align-items: center;
@@ -112,4 +122,24 @@ a {
     align-items: center;
     justify-content: center;
   }
+}
+
+.developer {
+  position: absolute;
+  bottom: 2rem;
+  left: 0rem;
+  padding: 2rem;
+  font-size: 1.6rem;
+  background-image: linear-gradient(120deg, #ffffff 35%, #ffffff65 100%);
+  backdrop-filter: blur(10px);
+  border-radius: 1.5rem;
+  border: 2px solid #ffffff75;
+  color: #333;
+  scale: 0.8;
+  transition: all 0.3s;
+  user-select: none;
+  &:hover {
+    transform: translateY(-0.2rem);
+  }
+  box-shadow: 0 1rem 5rem #00000035, -0.5rem -0.5rem 2rem #ffffff85, 1rem 1rem 1rem #7c7c7c55;
 }
