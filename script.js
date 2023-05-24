@@ -17,11 +17,19 @@ btnDictionary.addEventListener("click", () => {
 });
 
 btnGoogle.addEventListener("click", () => {
-  Google();
+  if (inputValue.value.length === 0) {
+    modalMsg();
+  } else {
+    Google();
+  }
 });
 
 btnYou.addEventListener("click", () => {
-  you();
+  if (inputValue.value.length === 0) {
+    modalMsg();
+  } else {
+    you();
+  }
 });
 
 // !call back functions section -----------------------------//
