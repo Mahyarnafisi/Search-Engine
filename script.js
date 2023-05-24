@@ -1,9 +1,12 @@
 "use strict";
+
+//! deceleration variables--------------------------------------//
 const inputValue = document.getElementById("input");
 const btnDictionary = document.querySelector(".btn--dictionary");
 const btnGoogle = document.querySelector(".btn--google");
 const btnYou = document.querySelector(".btn--you");
 
+// !Btns event listener section--------------------------------//
 btnDictionary.addEventListener("click", () => {
   dictionary();
 });
@@ -16,6 +19,7 @@ btnYou.addEventListener("click", () => {
   you();
 });
 
+// !call back functions section -----------------------------//
 const dictionary = () => {
   const refUrl = "https://dictionary.cambridge.org/dictionary/english/";
   const urlConcat = refUrl.concat(inputValue.value);
