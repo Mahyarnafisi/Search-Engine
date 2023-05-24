@@ -31,7 +31,7 @@ a {
 
 .container {
   width: 90vw;
-  max-width: 110rem;
+  max-width: 100rem;
   height: min-content;
   padding: 1rem;
   display: flex;
@@ -62,7 +62,7 @@ a {
   height: 7rem;
   border-radius: 1.5rem;
   outline: none;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   margin-top: 2rem;
   border: none;
   font-size: 2.1rem;
@@ -74,11 +74,18 @@ a {
 }
 .container input:focus {
   background-color: rgba(255, 255, 255, 0.2509803922);
+  transition: all 0.3s;
+}
+.container input:focus::placeholder {
+  transition: all 0.2s;
+  transform: translateY(-2rem);
+  font-size: 1.6rem;
+  color: #eee;
 }
 .container input::placeholder {
   font-weight: 100;
   font-size: 2.1rem;
-  color: #fff;
+  color: #eee;
 }
 .container .btns {
   display: flex;
