@@ -91,6 +91,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  flex-shrink: 1;
   gap: 2rem;
 }
 .container .btn {
@@ -145,7 +147,7 @@ a {
   display: flex;
   color: #ffffff;
   font-size: 2.1rem;
-  text-decoration: underline;
+  font-weight: 100;
   padding: 2rem;
   backdrop-filter: blur(10px);
   position: absolute;
